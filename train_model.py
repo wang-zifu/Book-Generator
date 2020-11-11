@@ -11,8 +11,9 @@ from functools import reduce
 from operator import add
 
 from model import Transformer
-from custom_utils import create_sentence, tokenize_text, modified_bleu, foldify
-from utils import save_checkpoint, load_checkpoint
+from utils.custom_utils import create_sentence, tokenize_text, modified_bleu, foldify
+from utils.utils import save_checkpoint, load_checkpoint
+
 
 input_text = Field(tokenize=tokenize_text, lower=True, init_token="<sos>", eos_token="<eos>")
 output_text = Field(tokenize=tokenize_text, lower=True, init_token="<sos>", eos_token="<eos>")

@@ -8,9 +8,9 @@ import os
 
 nltk.download('gutenberg')
 
-TRAIN_PATH = './nltktrain/'
-TEST_PATH = './nltktest/'
-VALIDATION_PATH = './nltkvalidation/'
+TRAIN_PATH = '../nltk_data/nltktrain/'
+TEST_PATH = '../nltk_data/nltktest/'
+VALIDATION_PATH = '../nltk_data/nltkvalidation/'
 
 def convert_to_json_split(filename):
     try:
